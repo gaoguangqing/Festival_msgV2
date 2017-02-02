@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SMS节日祝福</string>
+    <string name="sendMsg">发送</string>
+    <string name="addName">添加联系人</string>
+    <string name="sending">发送中</string>
+</resources>
