@@ -30,6 +30,7 @@ public class ChooseMsgActivity extends AppCompatActivity {
         mInflater=LayoutInflater.from(this);
         mFestivalId=getIntent().getIntExtra(FestivalCategoryFragment.ID_FESTIVAL,-1);
 
+        System.out.println("========Fesid====="+mFestivalId);
         setTitle((CharSequence) FestivalLab.getInstance().getFestivalById(mFestivalId).getName());
         initViews();
         initEvent();

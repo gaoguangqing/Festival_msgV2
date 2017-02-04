@@ -244,7 +244,7 @@ public class SendMsgActivity extends AppCompatActivity {
         mLayoutLoading.setVisibility(View.GONE);
         if(msgId!=-1)
         {
-            mMsg= FestivalLab.getInstance().getMsgByMsgId(msgId);
+            mMsg=(FestivalLab.getInstance().getMsgsByFestivalId(mFestivalId)).get(msgId-1);
             mEdMsg.setText(mMsg.getContent());
         }
     }
